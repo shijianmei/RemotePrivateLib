@@ -1,7 +1,7 @@
-<<<<<<< HEAD
-# RemotePrivateLib
-用于构建远程私有库
-=======
+
+
+**用于构建远程私有库**
+
 # remotePrivateLib
 
 [![CI Status](https://img.shields.io/travis/shijianmei0@sina.com/remotePrivateLib.svg?style=flat)](https://travis-ci.org/shijianmei0@sina.com/remotePrivateLib)
@@ -31,4 +31,4 @@ shijianmei0@sina.com, shijianmei0@sina.com
 ## License
 
 remotePrivateLib is available under the MIT license. See the LICENSE file for more info.
->>>>>>> Initial commit
+
