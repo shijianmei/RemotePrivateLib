@@ -1,0 +1,6 @@
+framework module remotePrivateLib {
+  umbrella header "remotePrivateLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
