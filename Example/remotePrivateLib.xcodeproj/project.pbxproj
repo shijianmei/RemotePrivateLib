@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		444200252099D36C00E76D5E /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444200242099D36C00E76D5E /* myView.m */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -18,8 +17,6 @@
 
 /* Begin PBXFileReference section */
 		0859BF56F8456ACB41462220 /* remotePrivateLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = remotePrivateLib.podspec; path = ../remotePrivateLib.podspec; sourceTree = "<group>"; };
-		444200232099D36C00E76D5E /* myView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
-		444200242099D36C00E76D5E /* myView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
 		5DC450D72B0C17A0FB4959F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
-				444200232099D36C00E76D5E /* myView.h */,
-				444200242099D36C00E76D5E /* myView.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -154,11 +149,6 @@
 				CLASSPREFIX = remotePrivateLib;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "shijianmei0@sina.com";
-				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
-					};
-				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "remotePrivateLib" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -250,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				444200252099D36C00E76D5E /* myView.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAD9F3E0B9C8A67451173801 /* Pods-remotePrivateLib_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -360,7 +350,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remotePrivateLib_Example.app/remotePrivateLib_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -369,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8978BCAEE658E6861D6CF6C3 /* Pods-remotePrivateLib_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -379,7 +369,6 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/remotePrivateLib_Example.app/remotePrivateLib_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
