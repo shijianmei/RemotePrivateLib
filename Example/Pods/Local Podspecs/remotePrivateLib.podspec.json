@@ -1,9 +1,9 @@
 {
   "name": "remotePrivateLib",
-  "version": "0.1.0",
-  "summary": "A short description of remotePrivateLib.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/shijianmei0@sina.com/remotePrivateLib",
+  "version": "0.2.0",
+  "summary": "remotePrivateLib.",
+  "description": "remotePrivateLib++++++++des",
+  "homepage": "https://github.com/shijianmei/RemotePrivateLib",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "shijianmei0@sina.com": "shijianmei0@sina.com"
   },
   "source": {
-    "git": "https://github.com/shijianmei0@sina.com/remotePrivateLib.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/shijianmei/RemotePrivateLib.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "remotePrivateLib/Classes/**/*"
+  "source_files": "remotePrivateLib/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  }
 }

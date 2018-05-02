@@ -1,5 +1,21 @@
 PODS:
-  - remotePrivateLib (0.1.0)
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - remotePrivateLib (0.2.0):
+    - AFNetworking
 
 DEPENDENCIES:
   - remotePrivateLib (from `../`)
@@ -9,7 +25,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  remotePrivateLib: 23e5ee287df1456657ec02597d94103678d866f2
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  remotePrivateLib: f2c147ace46aafe2d9ad946cb945954b63b0b0e9
 
 PODFILE CHECKSUM: 0cc8519d332f900f90906b2378b14bbc6b2754ac
 

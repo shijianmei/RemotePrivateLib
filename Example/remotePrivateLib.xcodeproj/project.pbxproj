@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444200252099D36C00E76D5E /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = 444200242099D36C00E76D5E /* myView.m */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,8 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0859BF56F8456ACB41462220 /* remotePrivateLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = remotePrivateLib.podspec; path = ../remotePrivateLib.podspec; sourceTree = "<group>"; };
-		5DC450D72B0C17A0FB4959F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0859BF56F8456ACB41462220 /* remotePrivateLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = remotePrivateLib.podspec; path = ../remotePrivateLib.podspec; sourceTree = "<group>"; };
+		444200232099D36C00E76D5E /* myView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
+		444200242099D36C00E76D5E /* myView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
+		5DC450D72B0C17A0FB4959F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -30,7 +33,7 @@
 		6DE6E53B19805136400D13E5 /* Pods_remotePrivateLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_remotePrivateLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8978BCAEE658E6861D6CF6C3 /* Pods-remotePrivateLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotePrivateLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-remotePrivateLib_Tests/Pods-remotePrivateLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BAD9F3E0B9C8A67451173801 /* Pods-remotePrivateLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-remotePrivateLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-remotePrivateLib_Tests/Pods-remotePrivateLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DC5C73DF8255C6AB69869640 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DC5C73DF8255C6AB69869640 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
+				444200232099D36C00E76D5E /* myView.h */,
+				444200242099D36C00E76D5E /* myView.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -192,10 +197,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-remotePrivateLib_Tests/Pods-remotePrivateLib_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/remotePrivateLib/remotePrivateLib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/remotePrivateLib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444200252099D36C00E76D5E /* myView.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
